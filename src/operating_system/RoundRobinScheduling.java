@@ -37,7 +37,7 @@ class RoundRobinScheduling extends Scheduling {
         }
     }
 
-    private void getLastIn() {
+    protected void setNext() {
         if (!emptyQueue()) {
             this.nextProcess = this.processQueue.get(this.processQueue.size() - 1);
         }
@@ -97,7 +97,7 @@ class RoundRobinScheduling extends Scheduling {
 
     protected void addProcessInQueue() {
         listToQueue();
-        getLastIn();
+        setNext();
         runProcess(this.nextProcess.getArrivalTime() - this.currentTime);
         dropNext();
     }

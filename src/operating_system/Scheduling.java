@@ -7,13 +7,13 @@ abstract class Scheduling {
     protected final ArrayList<ProcessBlock> processList;
 
     // count the running time
-    protected Integer currentTime = 0;
+    protected int currentTime = 0;
 
     // the speed of the process running
-    protected final Integer processSpeed;
+    protected final int processSpeed;
 
     // count the running time of the process in a cycle
-    protected Integer processSpeedTime = 0;
+    protected int processSpeedTime = 0;
 
     // log the step of processing
     protected final ArrayList<ProcessLog> processLogList = new ArrayList<>();
