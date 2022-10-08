@@ -1,4 +1,4 @@
-package operating_system;
+package operating_system_old;
 
 import java.util.ArrayList;
 
@@ -16,10 +16,10 @@ class ProcessLog {
     @Override
     public String toString() {
 
-        return "ProcessLog{" +
-                "currentTime=" + currentTime +
-                ", currentProcess='" + currentProcess + '\'' +
-                ", processQueue=" + processQueue.toString() +
-                '}' + "\n";
+        return "" +
+                "" + currentTime +
+                ", '" + currentProcess + '\'' +
+                ", " + processQueue.toString() +
+                "\n";
     }
 }
